@@ -4,12 +4,15 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import './index.css'
 import './custom.css'
 import App from './App'
+import SearchContextProvider from './context/SearchContext'
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
+		<SearchContextProvider>
+			<Router>
+				<App />
+			</Router>
+		</SearchContextProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
 )

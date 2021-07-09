@@ -23,7 +23,11 @@ const Character = ({ match }) => {
 		<p>Loading</p>
 	) : (
 		<>
-			<Link to="/">Go Back</Link>
+			<Link to="/">
+				<span className="rounded font-semibold border-2 border-gray-600 text-gray-600 py-1 px-2 ml-3 hover:bg-gray-600 hover:text-white">
+					Go Back
+				</span>
+			</Link>
 			<main className="mx-4 mt-8 md:w-5/6 md:mx-auto">
 				<section className=" grid md:grid-cols-3 md:grid-rows-6 md:gap-10  ">
 					<div className="flex mb-4 items-center justify-center md:col-span-1 md:row-span-full md:justify-end  md:h-full">
