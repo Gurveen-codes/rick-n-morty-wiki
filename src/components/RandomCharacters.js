@@ -12,7 +12,7 @@ const RandomCharacters = ({ number }) => {
 		return randomId
 	}
 
-	const getCharacter = useCallback(async () => {
+	const getCharacters = useCallback(async () => {
 		setLoading(true)
 		const randomChars = []
 		for (let i = 0; i < number; i++) {
@@ -25,8 +25,8 @@ const RandomCharacters = ({ number }) => {
 	}, [number])
 
 	useEffect(() => {
-		getCharacter()
-	}, [getCharacter])
+		getCharacters()
+	}, [getCharacters])
 
 	const content = loading ? (
 		<h1>Loading</h1>

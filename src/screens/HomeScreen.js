@@ -1,7 +1,7 @@
 import React from 'react'
 import CharacterGroup from '../components/CharacterGroup'
 
-const HomeScreen = (props) => {
+const HomeScreen = () => {
 	return (
 		<div>
 			<CharacterGroup charName="rick" title="Citadel of ricks"></CharacterGroup>
